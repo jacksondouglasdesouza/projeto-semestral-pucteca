@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------- */
+
+
+html {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #FFFAF9;
+  color: #171228;
+  max-width: 1400px;
+  max-height: 1200px;
+  margin: 0 auto;
+}
+
+body{
+  margin: 0 auto;
+}
+
+a, button, label, legend{
+  font-family: 'Fira Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+  color: #2F2E41;
+}
+
+.colEsquerda img .logoMarca{
+  margin-top: 10px;
+  width: 178;
+  height: 127;
+}
+
+#introducao{
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.colEsquerda{
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.colEsquerda h1{
+  font-size: 2.5rem;
+  font-weight: medium;
+  margin: 20px auto;
+  text-align: left;
+  margin-left: 40px;
+  line-height: 1.2;
+
+}
+
+.colEsquerda p{
+  font-size: 1.2rem;
+  font-weight: regular;
+  margin-bottom: 30px;
+  letter-spacing: 0.015rem;
+  text-align: left;
+  margin-left: 40px;
+  line-height: 1.2;
+
+}
+
+.colEsquerda fieldset{
+  display: inline-block;
+  margin-bottom: 30px;
+
+}
+
+.colEsquerda fieldset legend{
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.formularioLogin{
+  align-content: center;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.formularioLogin fieldset{
+  margin-top: 0;
+  padding-top: -5px;
+}
+
+.formularioLogin fieldset legend{
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+
+.formularioLogin fieldset legend.pMaior{
+  font-size: 0.9rem;
+}
+
+.formularioLogin input{
+  width: 400px;
+  height: 50px;
+  border: 1px solid #171228;
+  margin: 0;
+  padding: 0;
+}
+
+.formularioLogin input.check{
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.formularioLogin .login-butoons{
+  width: 400px;
+  height: 50px;
+  background-color: #C44B25;
+  border: none;
+  color: #FFFAF9;
+  padding: 15px 30px;
+  margin: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.formularioLogin .azul{
+  width: 400px;
+  height: 50px;
+  background-color: #171228;
+  border: none;
+  color: #FFFAF9;
+  padding: 15px 30px;
+  margin: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.colEsquerda .login-butoons:hover{
+  cursor: pointer;
+  background-color: #ff3c00de;
+  color: #FFFAF9;
+}
+
+.colEsquerda .azul:hover{
+  cursor: pointer;
+  background-color: #0a0144;
+  color: #FFFAF9;
+}
+
+.esqueci{
+  text-align: right;
+  padding-left: 180px;
+}
+.esqueci a{
+  text-decoration: nome;
+  color: #171228;
+}
+
+::-webkit-input-placeholder{
+  color: #c4c4c4;
+  text-transform: uppercase;
+  padding: 4px;
+  opacity: 1;
+
+}
+input:-moz-placeholder{
+  color: #c4c4c4;
+  text-transform: uppercase;
+  padding: 4px;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/*
+.colEsquerda .butoons{
+  background-color: #C44B25;
+  border: none;
+  color: #FFFAF9;
+  padding: 15px 30px;
+  width: 230px;
+  height: 50px;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.colEsquerda .butoons:hover{
+  cursor: pointer;
+}
+*/
+
+.colEsquerda footer{
+  text-align: center;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
+
+}
+
+.colEsquerda footer p{
+  font-size: 0.9rem;
+  text-align: left;
+  margin: 5 auto;
+  margin-bottom: 0;
+  width: 360px;
+  line-height: 1.2;
+  gap: 10px;
+}
+
+.colEsquerda p span.dev{
+  padding-top: 10px;
+}
+
+.colEsquerda footer .icons{
+  text-align: right;
+  margin-bottom: 0;
+
+}
+
+.colEsquerda p a{
+  padding-top: 10px;
+  text-decoration: none;
+  color: #C44B25;
+  font-weight: bold;
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fotoMulher{
+  display: block;
+  width: 746px;
+  height: 800px;
+  align-items: right;
+}
+
+
+
+
+

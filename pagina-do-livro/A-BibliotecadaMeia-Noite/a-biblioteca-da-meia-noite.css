@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------- */
+
+
+html {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #FFF;
+  color: #171228;
+  max-width: 1400px;
+  max-height: 1200px;
+  margin: 0 auto;
+}
+
+body{
+  margin: 0 auto;
+  width: 100%;
+}
+
+header{
+  background-color: #2F2E41;
+  width: 100%;
+  height: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+}
+
+.logo{
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+nav{
+  margin-top: 60px;
+}
+
+header nav a{
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+  font-weight: medium;
+}
+
+a, button, label, legend{
+  font-family: 'Fira Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+  color: #2F2E41;
+  line-height: 1.5;
+}
+
+
+.intro{
+  max-width: 1200px;
+  padding: 50px 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: left;
+}
+
+p{
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+h1{
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+h2{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h3{
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.detalhe{
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2F2E41;
+}
+.colunaDireita{
+  margin-right: 50px;
+  margin-left: -100px;
+  padding: 10px;
+
+}
+
+figure{
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+img.fotoLivro{
+  margin-bottom: 15px;
+}
+
+button.emprestar{
+  margin-top: 10px;
+  background-color: #C44B25;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button.emprestar:hover{
+  background-color: #ff3c00de;
+  color: #FFFAF9;
+}
+
+.recomendacoes{
+  max-width: 1200px;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #FFFAF9;
+  padding: 50px;
+}
+
+.recom:hover{
+  background-color: #c44a2538;
+}
+
+h4{
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 80px;
+  font-weight: bold;
+  color:#2F2E41;
+}
+
+.recomendacoes a{
+  padding: 1px;
+  margin: 1px;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* -------- FOOTER --------  */
+
+footer{
+  text-align: center;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
+  background-color: #2F2E41;
+  width: 100%;
+  height: 100px;
+
+}
+
+
+  footer p{
+  font-size: 0.8rem;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3;
+  margin-top: 35px;
+  margin-left: 80px;
+  color: #FFFAF9;
+}
+
+footer p span.dev{
+  padding-top: 10px;
+}
+
+footer .icons{
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 150px;
+
+}
+
+footer p a{
+  padding-top: 10px;
+  text-decoration: none;
+  color: #ffa88e;
+  font-weight: bold;
+}
+
+/* ----------------------------- */
+
+@media(max-width:700px){
+  body{
+    margin: 0 auto;
+
+  }.intro{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  } header{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+} .recomendacoes{
+  display: none;
+} .logo{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+} nav{
+  margin: 0 auto;
+  margin-top: -100px;
+} header nav a{
+  font-size: 0.7rem;
+  margin: 0 -4px;
+  gap: 50px;
+} img.email{
+  width: 18px;
+  height: 8px;
+} figure, img.fotoLivro{
+  text-align: center;
+  margin: 0 auto;
+
+
+}.descricao, .detalhesLivro{
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  margin: 0 auto;
+  margin-left: 150px;
+
+} .descricao h1, h2, h3, p{
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 15px;
+} footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+} footer p{
+  text-align: center;
+  margin: 0 auto;
+} footer .icons{
+  text-align: center;
+  margin: 0 auto;
+} 
+
+}
+
+@media(max-width:400px){
+  figure{
+    display: none;
+  } main, .colunaDireita{
+    align-items: left;
+    text-align: left;
+    margin-right: 30px;
+  }
+
+}
+
+
+
